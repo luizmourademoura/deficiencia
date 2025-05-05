@@ -7,37 +7,51 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #f8f8f8;
       margin: 0;
       padding: 0;
-      line-height: 1.6;
+      background-color: #ffffff;
       color: #333;
     }
     .container {
-      max-width: 900px;
-      margin: 30px auto;
-      background: white;
-      padding: 30px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 30px 20px;
     }
-    h1, h2, h3 {
+    h1 {
+      font-size: 28px;
+      margin-bottom: 20px;
       color: #2c3e50;
     }
+    h2 {
+      font-size: 22px;
+      margin-top: 40px;
+      color: #2c3e50;
+    }
+    p {
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
     ul {
-      list-style-type: disc;
-      padding-left: 20px;
+      margin-left: 20px;
+      margin-bottom: 20px;
+    }
+    li {
+      margin-bottom: 12px;
     }
     strong {
-      color: #000;
+      font-weight: bold;
+    }
+    em {
+      font-style: italic;
+    }
+    .sintomas, .causas {
+      margin-top: 20px;
     }
     img {
       max-width: 100%;
       height: auto;
-      margin-top: 20px;
+      margin-top: 30px;
       border: 1px solid #ccc;
-    }
-    hr {
-      margin: 30px 0;
     }
   </style>
 </head>
@@ -45,42 +59,47 @@
   <div class="container">
     <h1>Deficiência de Boro (B) em Plantas Aquáticas</h1>
 
-    <p>A deficiência de <strong>boro (B)</strong> em plantas de aquários de água doce é rara, mas crítica, pois o boro é um <strong>micronutriente imóvel</strong> essencial para a síntese da parede celular, divisão celular, transporte de açúcares e desenvolvimento de meristemas (pontos de crescimento). Sua carência afeta principalmente tecidos jovens, já que a planta não pode redistribuí-lo de folhas velhas para novas. Abaixo, descrevo sua manifestação técnica:</p>
+    <p>
+      A deficiência de <strong>boro (B)</strong> em plantas de aquários de água doce é rara, mas crítica, pois o boro é um <strong>micronutriente imóvel</strong> essencial para a síntese da parede celular, divisão celular, transporte de açúcares e desenvolvimento de meristemas (pontos de crescimento). Sua carência afeta principalmente tecidos jovens, já que a planta não pode redistribuí-lo de folhas velhas para novas.
+    </p>
 
-    <hr/>
+    <section class="sintomas">
+      <h2>Sintomas Técnicos da Deficiência de Boro</h2>
+      <ul>
+        <li><strong>Necrose apical e deformações em brotos novos:</strong>  
+          Pontos de crescimento (ápices) param de se desenvolver, tornando-se <strong>escuros, necróticos ou retorcidos</strong>. Folhas novas emergem <strong>distorcidas</strong>, com formato irregular ou enrolado (ex.: folhas de <em>Rotala</em> ou <em>Limnophila</em> com margens "rasgadas").
+        </li>
+        <li><strong>Clorose internerval em folhas jovens:</strong>  
+          Áreas entre as veias das folhas novas ficam <strong>amareladas ou translúcidas</strong>, enquanto as veias permanecem verdes. Em casos graves, surgem <strong>manchas necróticas</strong>.
+        </li>
+        <li><strong>Raízes atrofiadas e frágeis:</strong>  
+          Sistema radicular torna-se <strong>curto, espesso e quebradiço</strong>, com coloração escura ou marrom. Raízes laterais podem falhar em se desenvolver.
+        </li>
+        <li><strong>Aborto floral (em plantas que florescem):</strong>  
+          Botões florais não se abrem ou caem prematuramente (em espécies como <em>Anubias</em> ou <em>Bucephalandra</em>).
+        </li>
+        <li><strong>Fratura de pecíolos e caules:</strong>  
+          Tecidos estruturais enfraquecem, causando <strong>quebra espontânea</strong> de hastes ou pecíolos, mesmo sem estresse mecânico.
+        </li>
+      </ul>
+    </section>
 
-    <h2>Sintomas Técnicos da Deficiência de Boro:</h2>
-    <ul>
-      <li><strong>Necrose apical e deformações em brotos novos:</strong><br/>
-        - <strong>Pontos de crescimento (ápices)</strong> param de se desenvolver, tornando-se <strong>escuros, necróticos ou retorcidos</strong>.<br/>
-        - Folhas novas emergem <strong>distorcidas</strong>, com formato irregular ou enrolado (ex.: folhas de <em>Rotala</em> ou <em>Limnophila</em> com margens "rasgadas").
-      </li>
-      <li><strong>Clorose internerval em folhas jovens:</strong><br/>
-        - Áreas entre as veias de folhas novas ficam <strong>amareladas ou translúcidas</strong>, enquanto as veias permanecem verdes.<br/>
-        - Em casos graves, surgem <strong>manchas necróticas</strong> nessas regiões.
-      </li>
-      <li><strong>Raízes atrofiadas e frágeis:</strong><br/>
-        - Sistema radicular torna-se <strong>curto, espesso e quebradiço</strong>, com coloração escura ou marrom.<br/>
-        - Raízes laterais podem falhar em se desenvolver.
-      </li>
-      <li><strong>Aborto floral (em plantas que florescem):</strong><br/>
-        - Botões florais não se abrem ou caem prematuramente (em espécies como <em>Anubias</em> ou <em>Bucephalandra</em>).
-      </li>
-      <li><strong>Fratura de pecíolos e caules:</strong><br/>
-        - Tecidos estruturais enfraquecem, causando <strong>quebra espontânea</strong> de hastes ou pecíolos, mesmo sem estresse mecânico.
-      </li>
-    </ul>
+    <section class="causas">
+      <h2>Causas Principais</h2>
+      <ul>
+        <li><strong>Água extremamente mole ou purificada (RO/DI):</strong>  
+          Sistemas com água de osmose reversa não remineralizada têm níveis insuficientes de boro.
+        </li>
+        <li><strong>Fertilização desbalanceada:</strong>  
+          Uso de fertilizantes que omitem micronutrientes ou excesso de cálcio (Ca) e potássio (K), que antagonizam a absorção de B.
+        </li>
+        <li><strong>Substratos inertes ou ácidos:</strong>  
+          Substratos com pH &lt; 6,0 podem fixar boro, tornando-o indisponível.
+        </li>
+      </ul>
+    </section>
 
-    <hr/>
-
-    <h2>Causas Principais:</h2>
-    <ul>
-      <li><strong>Água extremamente mole ou purificada (RO/DI):</strong> Sistemas com água de osmose reversa não remineralizada têm níveis insuficientes de boro.</li>
-      <li><strong>Fertilização desbalanceada:</strong> Uso de fertilizantes que omitem micronutrientes ou excesso de cálcio (Ca) e potássio (K), que antagonizam a absorção de B.</li>
-      <li><strong>Substratos inertes ou ácidos:</strong> Substratos com pH &lt; 6,0 podem fixar boro, tornando-o indisponível.</li>
-    </ul>
-
-    <img src="boro.jpeg" alt="Sintomas de deficiência de boro em plantas aquáticas"/>
+    <img src="boro.jpeg" alt="Sintomas de deficiência de boro em plantas aquáticas" />
   </div>
 </body>
 </html>
