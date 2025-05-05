@@ -9,76 +9,66 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background: #f4f4f4;
+      background-color: #f4f4f4;
     }
+
     .container {
       max-width: 900px;
       margin: 0 auto;
       padding: 20px;
-      background: #ffffff;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    .imagem {
-      width: 100%;
       text-align: center;
-      margin-bottom: 20px;
     }
-    .imagem img {
-      max-width: 100%;
+
+    .container img {
+      width: 100%;
       height: auto;
-      border-radius: 10px;
-      border: 1px solid #ccc;
+      margin-bottom: 20px;
+      border-radius: 8px;
     }
-    .descricao h1 {
-      color: #2c3e50;
+
+    .descricao {
+      background-color: #d0f5d0; /* verde claro */
+      padding: 20px;
+      border-radius: 8px;
+      text-align: left;
     }
-    .descricao h2 {
-      color: #2980b9;
+
+    h1 {
+      text-align: center;
+      color: #2c5f2d;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    @media (max-width: 600px) {
+      .descricao {
+        padding: 15px;
+      }
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <div class="imagem">
-      <img src="nitrogenio.jpeg" alt="Folha com deficiência de nitrogênio">
-    </div>
+    <img src="nitrogenio.jpeg" alt="Deficiência de Nitrogênio" />
     <div class="descricao">
-      <h1>Deficiência de Nitrogênio (N)</h1>
+      <h1>Deficiência de Nitrogênio</h1>
       <p>A deficiência de nitrogênio (N) em plantas de aquários de água doce é uma das carências mais comuns, já que o nitrogênio é um <strong>macronutriente essencial</strong> para a síntese de proteínas, clorofila e DNA. Sua ausência afeta diretamente o metabolismo e o crescimento das plantas.</p>
 
       <h2>Sintomas Técnicos da Deficiência de Nitrogênio:</h2>
       <ul>
-        <li><strong>Clorose generalizada em folhas mais velhas:</strong>
-          <ul>
-            <li>As folhas inferiores (mais maduras) tornam-se <strong>amarelas</strong> (clorose), começando pelas margens e progredindo para o centro.</li>
-            <li>As veias podem permanecer verdes inicialmente, mas em casos graves, toda a folha perde a pigmentação verde.</li>
-          </ul>
-        </li>
-        <li><strong>Necrose e queda foliar:</strong>
-          <ul>
-            <li>Folhas afetadas podem desenvolver <strong>manchas marrons</strong> (necrose) e cair prematuramente.</li>
-            <li>A planta prioriza o crescimento de novas folhas, "roubando" nitrogênio das folhas antigas (nutriente móvel).</li>
-          </ul>
-        </li>
-        <li><strong>Crescimento atrofiado:</strong>
-          <ul>
-            <li>Plantas exibem <strong>internódios mais curtos</strong> e desenvolvimento lento.</li>
-            <li>Novas folhas podem surgir menores e mais frágeis.</li>
-          </ul>
-        </li>
-        <li><strong>Redução na produção de clorofila:</strong>
-          <ul>
-            <li>A falta de N reduz a síntese de clorofila, prejudicando a fotossíntese e levando ao enfraquecimento geral da planta.</li>
-          </ul>
-        </li>
+        <li><strong>Clorose generalizada em folhas mais velhas:</strong> As folhas inferiores tornam-se <strong>amarelas</strong>, com veias inicialmente verdes. Em casos graves, a folha inteira perde o verde.</li>
+        <li><strong>Necrose e queda foliar:</strong> Folhas afetadas desenvolvem <strong>manchas marrons</strong> e podem cair. A planta redistribui nitrogênio das folhas velhas para as novas.</li>
+        <li><strong>Crescimento atrofiado:</strong> Internódios curtos, novas folhas menores e desenvolvimento lento.</li>
+        <li><strong>Redução na produção de clorofila:</strong> Afeta a fotossíntese, levando ao enfraquecimento da planta.</li>
       </ul>
 
       <h2>Causas Principais:</h2>
       <ul>
-        <li><strong>Baixos níveis de nitrato (NO₃⁻):</strong> Em aquários com poucos peixes (bioload reduzido) ou substratos inertes não fertilizados.</li>
-        <li><strong>Excesso de plantas ou competição:</strong> Sistemas densamente plantados sem suplementação adequada.</li>
-        <li><strong>Filtração excessiva:</strong> Uso de mídias removedoras de nitrato (ex.: denitradores) em excesso.</li>
+        <li><strong>Baixos níveis de nitrato (NO₃⁻):</strong> Aquários com poucos peixes ou substratos inertes.</li>
+        <li><strong>Excesso de plantas ou competição:</strong> Plantados densamente sem fertilização adequada.</li>
+        <li><strong>Filtração excessiva:</strong> Uso intenso de mídias que removem nitrato.</li>
       </ul>
     </div>
   </div>
