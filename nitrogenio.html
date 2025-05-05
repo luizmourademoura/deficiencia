@@ -1,95 +1,89 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Deficiência de Nitrogênio</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      padding: 0;
-      background: #f4f4f4;
+      font-family: Arial, sans-serif;
+      background-color: #f0f8f0;
     }
+
     .container {
       display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: flex-start;
-      padding: 40px;
-      gap: 40px;
-    }
-    .descricao {
-      flex: 1;
-      background: #ffffff;
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    .descricao h1 {
-      margin-top: 0;
-      color: #2c3e50;
-    }
-    .descricao h2 {
-      color: #2980b9;
-    }
-    .imagem {
-      flex: 1;
-      display: flex;
-      justify-content: center;
+      flex-direction: column;
       align-items: center;
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
     }
-    .imagem img {
+
+    .image-container {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .image-container img {
       max-width: 100%;
       height: auto;
       border-radius: 10px;
-      border: 1px solid #ccc;
+    }
+
+    .content {
+      background-color: #d4edda;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      color: #333;
+    }
+
+    h1, h3 {
+      text-align: center;
+    }
+
+    ul {
+      padding-left: 20px;
     }
   </style>
 </head>
+
 <body>
   <div class="container">
-    <div class="descricao">
+    <div class="image-container">
+      <img src="nitrogenio.jpeg" alt="Sintomas de deficiência de nitrogênio">
+    </div>
+    <div class="content">
       <h1>Deficiência de Nitrogênio (N)</h1>
-      <p>A deficiência de nitrogênio (N) em plantas de aquários de água doce é uma das carências mais comuns, já que o nitrogênio é um <strong>macronutriente essencial</strong> para a síntese de proteínas, clorofila e DNA. Sua ausência afeta diretamente o metabolismo e o crescimento das plantas.</p>
-
-      <h2>Sintomas Técnicos da Deficiência de Nitrogênio:</h2>
+      <p>A deficiência de nitrogênio (N) em plantas de aquários de água doce é uma das carências mais comuns, pois o nitrogênio é um <strong>macronutriente essencial</strong> para a síntese de proteínas, clorofila e DNA. Sua ausência afeta diretamente o metabolismo e o crescimento das plantas.</p>
+      <hr>
+      <h3><strong>Sintomas Técnicos da Deficiência de Nitrogênio:</strong></h3>
       <ul>
-        <li><strong>Clorose generalizada em folhas mais velhas:</strong>
-          <ul>
-            <li>As folhas inferiores (mais maduras) tornam-se <strong>amarelas</strong> (clorose), começando pelas margens e progredindo para o centro.</li>
-            <li>As veias podem permanecer verdes inicialmente, mas em casos graves, toda a folha perde a pigmentação verde.</li>
-          </ul>
+        <li><strong>Clorose generalizada em folhas mais velhas:</strong><br>
+          As folhas inferiores (mais maduras) tornam-se <strong>amarelas</strong> (clorose), começando pelas margens e progredindo para o centro. As veias podem permanecer verdes inicialmente, mas em casos graves, toda a folha perde a pigmentação verde.
         </li>
-        <li><strong>Necrose e queda foliar:</strong>
-          <ul>
-            <li>Folhas afetadas podem desenvolver <strong>manchas marrons</strong> (necrose) e cair prematuramente.</li>
-            <li>A planta prioriza o crescimento de novas folhas, "roubando" nitrogênio das folhas antigas (nutriente móvel).</li>
-          </ul>
+        <li><strong>Necrose e queda foliar:</strong><br>
+          Folhas afetadas podem desenvolver <strong>manchas marrons</strong> (necrose) e cair prematuramente. A planta prioriza o crescimento de novas folhas, "roubando" nitrogênio das folhas antigas (nutriente móvel).
         </li>
-        <li><strong>Crescimento atrofiado:</strong>
-          <ul>
-            <li>Plantas exibem <strong>internódios mais curtos</strong> e desenvolvimento lento.</li>
-            <li>Novas folhas podem surgir menores e mais frágeis.</li>
-          </ul>
+        <li><strong>Crescimento atrofiado:</strong><br>
+          Plantas exibem <strong>internódios mais curtos</strong> (espaço entre as folhas) e desenvolvimento lento. Novas folhas podem surgir menores e mais frágeis.
         </li>
-        <li><strong>Redução na produção de clorofila:</strong>
-          <ul>
-            <li>A falta de N reduz a síntese de clorofila, prejudicando a fotossíntese e levando ao enfraquecimento geral da planta.</li>
-          </ul>
+        <li><strong>Redução na produção de clorofila:</strong><br>
+          A falta de N reduz a síntese de clorofila, prejudicando a fotossíntese e levando ao enfraquecimento geral da planta.
         </li>
       </ul>
-
-      <h2>Causas Principais:</h2>
+      <hr>
+      <h3><strong>Causas Principais:</strong></h3>
       <ul>
         <li><strong>Baixos níveis de nitrato (NO₃⁻):</strong> Em aquários com poucos peixes (bioload reduzido) ou substratos inertes não fertilizados.</li>
         <li><strong>Excesso de plantas ou competição:</strong> Sistemas densamente plantados sem suplementação adequada.</li>
         <li><strong>Filtração excessiva:</strong> Uso de mídias removedoras de nitrato (ex.: denitradores) em excesso.</li>
       </ul>
     </div>
-    <div class="imagem">
-      <img src="nitrogenio.jpeg" alt="Folha com deficiência de nitrogênio">
-    </div>
   </div>
 </body>
+
 </html>
