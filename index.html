@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deficiência Nutricional em Plantas de Aquário</title>
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#009688">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 0 10px;
+        }
+
+        header {
+            background-color: #009688;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 0 0 10px 10px;
+        }
+
+        section {
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        select {
+            width: 100%;
+            padding: 10px;
+            font-size: 1em;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        #nutrienteInfo {
+            background-color: #e6ffe6;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        iframe {
+            width: 100%;
+            height: 600px;
+            border: none;
+            border-radius: 10px;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 0.9em;
+            color: #777;
+            margin: 40px 0 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Deficiências Nutricionais em Plantas de Aquário</h1>
+    </header>
+
+    <section>
+        <label for="nutriente">Escolha o nutriente:</label>
+        <select id="nutriente" onchange="loadNutriente()">
+            <option value="">Selecione...</option>
+            <option value="nitrogenio.html">Nitrogênio</option>
+            <option value="potassio.html">Potássio</option>
+            <option value="fosforo.html">Fósforo</option>
+            <option value="magnesio.html">Magnésio</option>
+            <option value="calcio.html">Cálcio</option>
+            <option value="ferro.html">Ferro</option>
+            <option value="enxofre.html">Enxofre</option>
+            <option value="boro.html">Boro</option>
+            <option value="zinco.html">Zinco</option>
+            <option value="manganes.html">Manganês</option>
+        </select>
+
+        <div id="nutrienteInfo"></div>
+    </section>
+
+    <footer>
+        <p>Identificação e correção de deficiências nutricionais em plantas aquáticas.</p>
+        <p style="margin-top: 10px;">&copy; 2025 PLAM Aquarismo</p>
+    </footer>
+
+    <script>
+        function loadNutriente() {
+            const nutriente = document.getElementById("nutriente").value;
+            const divInfo = document.getElementById("nutrienteInfo");
+
+            if (nutriente) {
+                const iframe = document.createElement("iframe");
+                iframe.src = nutriente;
+                divInfo.innerHTML = "";
+                divInfo.appendChild(iframe);
+            } else {
+                divInfo.innerHTML = "";
+            }
+        }
+    </script>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js')
+                .then(reg => console.log("Service Worker registrado!", reg))
+                .catch(err => console.error("Erro ao registrar o Service Worker:", err));
+        }
+    </script>
+
+    <script>
+        // Ordena os itens da lista em ordem alfabética
+        window.addEventListener('DOMContentLoaded', () => {
+            const select = document.getElementById("nutriente");
+            const options = Array.from(select.options)
+                .filter(option => option.value)
+                .sort((a, b) => a.text.localeCompare(b.text, 'pt-BR'));
+
+            const primeiro = select.options[0];
+            select.innerHTML = '';
+            select.appendChild(primeiro);
+            options.forEach(option => select.appendChild(option));
+        });
+    </script>
+</body>
+</html>
